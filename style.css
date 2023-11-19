@@ -235,6 +235,7 @@ p {
       flex-direction: column;
       align-items: center;
       .textboxmember {
+        font-size: .9em;
         flex-wrap: nowrap;
         font-family: "Mitr", sans-serif;
       }
@@ -245,7 +246,7 @@ p {
     }
     .image {
       width: 7em;
-      height: auto;
+      height: 7em;
       border-radius: 5em;
       overflow: hidden;
       & img {
