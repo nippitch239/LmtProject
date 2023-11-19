@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+}
+/* font-family: "Mitr", sans-serif;
+font-family: "Poppins", sans-serif; */
+
+span{
+  color: #4ee7ff;
+}
+
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+#page1 {
+  display: flex;
+  flex-direction: row;
+  .text {
+    width: 45%;
+    height: auto;
+    /* margin: 0 0 0 0%; */
+    color: #00ddff;
+    background-image: -webkit-linear-gradient(0deg, #00ddff 0%, #5349e3 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Mitr", sans-serif;
+  }
+  .text p:nth-child(1) {
+    display: inline;
+    font-size: 2.5em;
+    font-weight: 500;
+    font-family: "Mitr", sans-serif;
+
+  }
+  .image {
+    .boximg {
+      /* transform: translate(-10%, 0); */
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      border-radius: 100%;
+      background: #8aefff;
+      background-image: -webkit-linear-gradient(
+        180deg,
+        #9df2ff 0%,
+        #5ae0f8 100%
+      );
+
+      padding: 0.5em;
+      & img {
+        width: 100%;
+        transform: scale(106%);
+        transform-origin: center center;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#page2 {
+  .text {
+    width: 100%;
+    height: auto;
+    .textmain {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      & p:nth-child(1) {
+        background: #8aefff;
+        background-image: -webkit-linear-gradient(
+          180deg,
+          #9df2ff 0%,
+          #5ae0f8 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 65px;
+        font-family: "Mitr", sans-serif;
+      }
+      & p:nth-child(2) {
+        text-indent: 70px;
+        display: inline;
+        width: 60%;
+        height: auto;
+        font-family: "Mitr", sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+#page3 {
+  .text {
+    width: 40%;
+    background: #8aefff;
+    background-image: -webkit-linear-gradient(180deg, #9df2ff 0%, #5ae0f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+    font-family: "Mitr", sans-serif;
+    ::after {
+      content: "?";
+      font-size: 2em;
+    }
+  }
+  .list {
+    width: 30%;
+    & ul {
+      & li {
+    font-family: "Mitr", sans-serif;
+
+        font-size: 0.8em;
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+#page4 {
+  flex-direction: column;
+  .text {
+    width: 100%;
+    height: auto;
+    background: #8aefff;
+    background-image: -webkit-linear-gradient(180deg, #9df2ff 0%, #5ae0f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    font-family: "Mitr", sans-serif;
+    text-align: center;
+  }
+  .boxflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0.9em 0 0 0;
+    .box {
+      width: 20%;
+      height: 10em;
+      border: 2px solid rgba(39, 39, 39, 0.933);
+      border-radius: 0.3em;
+      margin: 0 1em;
+      :first-child {
+        font-size: 1.3em;
+      }
+      .textemo {
+        display: flex;
+        margin: 0 0 0 0.5em;
+        flex-direction: row;
+        align-items: center;
+        & p {
+          font-family: "Mitr", sans-serif;
+          font-weight: 300;
+          margin: 0 0 0 0.5em;
+          font-style: italic;
+        }
+      }
+      .destextmemo {
+        width: 100%;
+        font-family: "Mitr", sans-serif;
+
+        font-size: 0.4em;
+        text-indent: 50px;
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+      }
+    }
+  }
+  .des {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    :first-child {
+      width: 70%;
+      text-indent: 50px;
+      font-size: 0.6em;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
+
+.material-symbols-outlined {
+  color: #3a3a3a;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 12;
+}
+
+#page5 {
+  flex-direction: column;
+  .text {
+    width: 100%;
+    background: #8aefff;
+    background-image: -webkit-linear-gradient(180deg, #9df2ff 0%, #5ae0f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 58px;
+    font-family: "Mitr", sans-serif;
+    display: flex;
+    justify-content: center;
+    /* margin: 0 0 1em; */
+  }
+  .Member {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 1em;
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .textboxmember {
+        font-size: .7em;
+        flex-wrap: nowrap;
+        font-family: "Mitr", sans-serif;
+      }
+      .boxdes {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.6em;
+      }
+    }
+    .image {
+      width: 7em;
+      height: 7em;
+      border-radius: 5em;
+      overflow: hidden;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#page6{
+  flex-direction: column;
+  .main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .box{
+      margin: 0 1em;
+      width: 25%;
+      height: 15em;
+      & img{
+        width: 100%;
+        height: 100%;
+      object-fit: contain;
+      
+      }
+    }
+  }
+  .text{
+    width: 100%;
+    background: #8aefff;
+    background-image: -webkit-linear-gradient(180deg, #9df2ff 0%, #5ae0f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+    font-family: "Mitr", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1em;
+  }
+}
