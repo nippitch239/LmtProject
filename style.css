@@ -49,7 +49,7 @@ p {
   }
   .text p:nth-child(1) {
     display: inline;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
   }
@@ -255,5 +255,39 @@ p {
         object-fit: cover;
       }
     }
+  }
+}
+
+#page6{
+  flex-direction: column;
+  .main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .box{
+      margin: 0 1em;
+      width: 25%;
+      height: 15em;
+      & img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .text{
+    width: 100%;
+    background: #8aefff;
+    background-image: -webkit-linear-gradient(180deg, #9df2ff 0%, #5ae0f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+    font-family: "Mitr", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1em;
   }
 }
